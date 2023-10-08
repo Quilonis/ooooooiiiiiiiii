@@ -63,6 +63,7 @@ corrects=QLabel("Вірних вілповідей")
 succsesfull=QLabel("Успішність")
 attempts=QLabel("Разів відповіли")
 
+stats_label.setStyleSheet("font-weight:bold")
 
 line7=QHBoxLayout()
 line8=QVBoxLayout()
