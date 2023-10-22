@@ -2,6 +2,19 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (QApplication,QSpinBox,QWidget,QPushButton,QLabel,QHBoxLayout,QVBoxLayout
                     ,QRadioButton,QGroupBox,QLineEdit)
 
+from memo_app import app
+
+main_win=QWidget()
+main.win.setWindowTitle('Test')
+main_win.resize(400,400)
+
+
+
+
+
+
+
+
 app=QApplication([])
 main_win=QWidget()
 
@@ -83,3 +96,16 @@ main_line.addLayout(line8)
 main_win.setLayout(main_line)
 main_win.show()
 app.exec_()
+
+def show_result():
+    RadioGroupButton.hide()
+    btn_0k.setText("Next question")
+
+def show_question():
+    RadioGroupBox.show()
+    btn_0k.setText("Answer")
+    rbtn_1.setChecked(False)
+    rbtn_2.setChecked(False)
+    rbtn_3.setChecked(False)
+    rbtn_4.setChecked(False)
+    RadioGroup.setExclusive(True)
